@@ -1,0 +1,14 @@
+{
+    "$schema": "https://json.schemastore.org/staticwebapp.config.json",
+    "routes": [
+      {
+        "route": "/", "allowedRoles" : ["anonymous"]
+      }, 
+      {
+        "route": "/home", "allowedRoles" : ["invited_users"]
+      },
+      {
+        "route": "/api*", "allowedRoles" : ["invited_users"]
+      }
+    ]
+}
